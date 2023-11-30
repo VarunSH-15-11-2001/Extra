@@ -9,7 +9,7 @@ def index():
     if os.path.exists('output.mp4'):
         return render_template('display_video.html')
     else:
-        return 'No fall detected'
+        return render_template('display_no.html')
 
 @app.route('/video')
 def video():
